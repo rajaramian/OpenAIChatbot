@@ -86,7 +86,7 @@ hotel_assistant_prompt_template = PromptTemplate(
     )
 
 llm = OpenAI(model='gpt-3.5-turbo-instruct', temperature=0,
-             api_key="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")
+             )
 
 llm_chain = hotel_assistant_prompt_template | llm
 
